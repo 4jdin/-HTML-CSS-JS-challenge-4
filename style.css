@@ -1,0 +1,181 @@
+:root{
+
+--orange: hsl(25, 97%, 53%);
+
+/*### Neutral*/
+
+--white: hsl(0, 0%, 100%);
+--light-grey: hsl(217, 12%, 63%);
+--medium-grey: hsl(216, 12%, 54%);
+--dark-blue: hsl(213, 19%, 18%);
+--very-dark-blue: hsl(216, 12%, 8%);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    font-weight: 400;
+    color:  hsl(217, 12%, 63%);
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    background-color: var(--very-dark-blue);
+    color: hsl(0, 0%, 100%, 60%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+button {
+    font-family: inherit;
+}
+
+.container {
+    width: 26rem;
+    padding: 1.25rem;
+    background-color: var(--dark-blue);
+    border-radius: 1.8rem;
+    padding-bottom: 2rem;
+}
+
+.container .icon {
+    padding: 1rem 0rem 0rem 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: hsl(216, 12%, 54%, 10%);
+}
+
+h1 {
+    color: var(--white);
+    padding: 2rem 0.5rem 0.5rem;
+    font-weight: 700;
+}
+
+.container p {
+    padding: 1rem 0.5rem 0rem 0.5rem;
+}
+
+.container ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.container ul li {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating {
+    color: hsl(0, 0%, 100%, 60%);
+    background-color: hsl(216, 12%, 54%, 10%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.rating:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.rating:focus {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
+.submit {
+    background: var(--orange);
+    color: var(--white);
+    width: 100%;
+    padding: 0.8rem 0 0.6rem 0;
+    border: none;
+    border-radius: 2rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.thank-you-container {
+    width: 26rem;
+    padding: 1.25rem;
+    background-color: var(--dark-blue);
+    border-radius: 1.8rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-you-container img {
+    padding: 1rem 0rem 2rem 0rem;
+}
+
+.thank-you-container p.final-rating {
+    color: var(--orange);
+    background-color: hsl(216, 12%, 8%, 35%);
+    padding: 0.8rem 0 0.6rem 0;
+    width: 12rem;
+    border-radius: 2rem;    
+}
+
+p.final-rating span {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.thank-you-container h1{
+    padding-top: 1rem 0rem 1rem 0rem;
+}
+
+.thank-you-container p {
+    padding-bottom: 1.5rem;
+}
+
+.thank-you-container.hidden {
+    display: none;
+}
+
+.attribution { 
+    padding-top: 2rem;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
