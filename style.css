@@ -52,7 +52,7 @@ button {
 .container {
     width: 26rem;
     padding: 1.25rem;
-    background-color: var(--very-dark-blue);
+    background-color: hsl(213, 19%, 18%, 50%);
     border-radius: 1.8rem;
     padding-bottom: 2rem;
 }
@@ -131,7 +131,7 @@ h1 {
 .thank-you-container {
     width: 26rem;
     padding: 1.25rem;
-    background-color: var(--very-dark-blue);
+    background-color: hsl(213, 19%, 18%, 50%);
     border-radius: 1.8rem;
     padding-bottom: 2rem;
     display: flex;
