@@ -10,36 +10,37 @@
   
 </head>
 <body>
-    <div class="container">
-        <article class="icon">
+    <main>
+        <div role="navigation" class="container">
+        <div class="icon">
            <img alt="icon-star" src="icon-star.svg"> 
-        </article>
+        </div>
 
-        <article>
+        <div>
 
            <h1> How did we do? </h1> 
            <p> Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
-        <ul>
-            <button class="rating"> <li>1</li> </button>
-            <button class="rating"> <li>2</li> </button>
-            <button class="rating"> <li>3</li> </button>
-            <button class="rating"> <li>4</li> </button>
-            <button class="rating"> <li>5</li> </button>
-            
-        </ul>
+        <div class="buttons">
+            <button class="rating"> 1 </button>
+            <button class="rating"> 2 </button>
+            <button class="rating"> 3 </button>
+            <button class="rating"> 4 </button>
+            <button class="rating"> 5 </button>
+        </div>
 
-        </article>
-
+        <div>
             <button class="submit" type="submit" id="submit">SUBMIT</button>
+        </div>
+     
+    </main>
 
-    </div>
-
+    <main>
     <div class="thank-you-container hidden">
         
-    <article class="image">
+    <div class="image">
         <img alt="img-thankyou" src="illustration-thank-you.svg">
-    </article>
+    </div>
 
     <p class="final-rating">
     You selected
@@ -47,22 +48,24 @@
     out of 5
     </p>
 
-    <article>
+    <div>
 
     <h1>Thank you!</h1>
         <p>We appreciate you taking the time to give a rating. <br>
         If you ever need more support, don’t hesitate to <br> get in touch!</p>
-    </article>
+        </div>
 
     <button class="submit" type="submit" id="rate">RATE AGAIN</button>
 
     </div>
 
-    <div class="attribution">
+    </main>
+
+    <div role="contentinfo" class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="https://www.frontendmentor.io/profile/4jdin">4jdin</a>.
       </div>
-</body>
-
-<script src="app.js"></script>
+      
+    </body>
+    <script src="app.js"></script>
 </html>
